@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+header a {
+	text-decoration: none;
+}
+
+section {
+	min-width: 1200px;
+	width: 70%;
+	align-items: center;
+	justify-content: center;
+	margin: 100px auto;
+	flex: 1;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+div p {
+	margin: 40px 0 20px 0;
+}
+
+.d31 img {
+	width: 50vw;
+	height: 50vh;
+	align-self: center;
+}
+
+.d31 {
+	flex: 2;
+	margin-top: 5%;
+}
+
+.d31 input {
+	width: 15vw;
+}
+
+.d311 {
+	flex: 1 0;
+}
+
+.d32 {
+	flex-direction: row;
+}
+
+div #image_container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 20vw;
+	height: 20vh;
+	justify-content: space-evenly;
+	align-content: stretch;
+}
+
+div #image_container img {
+	width: 10vw;
+	height: 20vh;
+}
+
+section a {
+	display: flex;
+	border: 1px solid rgb(41, 172, 253);
+	align-self: center;
+	margin: 2% 0;
+}
+
+textarea {
+	width: 100%;
+	height: 10rem;
+	resize: none;
+}
+
+.d41 {
+	height: 100px;
+}
+
+.dd {
+	align-items: center;
+}
+
+/* .dd input:nth-of-type(1), input:nth-of-type(2) {
+	width: 50vw;
+	height: 40px;
+	font-size: 1rem;
+}
+
+.dd input:nth-of-type(3) {
+	width: 10vw;
+	height: 30px;
+	margin-top: 10%;
+} */
+
+.adcars {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.addr {
+	width: 20vw;
+	height: 10%;
+}
+
+.d21, .d11 {
+	width: 70%;
+	align-items: center;
+}
+
+.selectCars {
+	margin: 10px;
+	font-size: 20px;
+	width: 160px;
+}
+
+label {
+	font-size: 20px;
+	margin: 10px;
+}
+
+header h1:hover {
+	color: white;
+	text-decoration: none;
+}
+
+div.adcars input {
+	height: 4vh;
+	font-size: 1.5rem;
+}
+
+
+/* table */
+
+.tbl01 {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  margin : 20px 10px;
+  width:50vw;
+}
+.tbl01 th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border: 1px solid #ccc;
+}
+.tbl01 td {
+  padding: 10px;
+  vertical-align: top;
+  border: 1px solid #ccc;
+}
+
+/* input text */
+.vw80 {
+	width: 80vw;
+    height: 40px;	
+}
+
+.vw70 {
+	width: 70vw;
+    height: 40px;	
+}
+
+.vw50 {
+	width:50vw;
+    height: 40px;	
+}
+
+.vw30 {
+	width: 30vw;
+    height: 40px;	
+}
+
+.vw20 {
+	width: 20vw;
+    height: 40px;	
+}
+
+.wp80 {
+	width: 80%;
+    height: 40px;	
+}
+
+.wp70 {
+	width: 70%;
+    height: 40px;	
+}
+
+.wp50 {
+	width:50%;
+    height: 40px;	
+}
+
+.wp30 {
+	width: 30%;
+    height: 40px;	
+}
+
+.wp20 {
+	width: 20%;
+    height: 40px;	
+}
+
+.mb10 {
+	margin-bottom: 10px;
+}
+
+footer{
+	margin-top:20px;	
+	min-height:10px;
+}
+
+

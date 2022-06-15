@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+ul li {
+  list-style: none;
+}
+header {
+  min-width: 1200px;
+  display: flex;
+  background-color: rgb(0 208 255);
+  font-family: "Gugi", cursive;
+  color: white;
+  height: 20vh;
+  align-items: center;
+}
+header h1 {
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+}
+.d1 {
+  margin: auto;
+}
+.d2 {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+.d2 i {
+  padding: 0 20px;
+}
+.d3 {
+  margin-left: 3%;
+  font-size: 20px;
+}
+
+nav li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+nav:hover {
+  visibility: visible;
+  transform: translateX(1);
+  opacity: 1;
+}
+#nav_menu {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  opacity: 0;
+  transition: 0.6s ease-out;
+  width: 300px;
+  background-color: salmon;
+}
+#nav_menu ul li:last-child {
+  margin-top: 15px;
+}
+div.nav_box {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  height: 100vh;
+  transition: right 250ms ease-in-out 0s;
+  transform: translateY(0);
+}
+
+#mypage:hover #nav_menu {
+  display: flex;
+  visibility: visible;
+  height: 30vh;
+  opacity: 1;
+  z-index: 100;
+}
+#mypage {
+  display: flex;
+  flex-direction: column;
+}
+.list {
+  display: inline-block;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  font-size: 30px;
+  padding: 2rem;
+}
+.list li {
+  margin: 20px auto;
+}

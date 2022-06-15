@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.callor.app.persistance.PostingDao">
+
+	<select id="selectAll" resultType="PostingVO">
+		SELECT * FROM tbl_posting
+	</select>
+
+	<select id="findById" resultType="PostingVO">
+		SELECT * FROM tbl_posting 
+		WHERE Posting_seq = #{Posting_seq}
+	</select>
+
+	<insert id="insert" parameterType="PostingVO">
+		insert into tbl_posting
+		(
+		Posting_seq,
+		title,
+		cont,
+		cars,
+		cat_code,
+		addr,
+		addr_dtl,
+		goods,
+		writer
+		) VALUES (
+		#{Posting_seq},
+		#{title},
+		#{cont},
+		#{cars},
+		#{cat_code},
+		#{addr},
+		#{addr_dtl},
+		#{goods},
+		#{writer}
+		)
+	</insert>
+
+	<update id="update" parameterType="PostingVO">
+		UPDATE tbl_posting SET
+			title = #{title},
+			cont = #{cont},
+			cars = #{cars},
+			cat_code = #{cat_code},
+			addr = #{addr},
+			addr_dtl = #{addr_dtl},
+			goods = #{goods}
+		WHERE Posting_seq = #{Posting_seq}
+	</update>
+	<delete id="delete">
+		DELETE FROM tbl_posting 
+		WHERE Posting_seq = #{Posting_seq}
+	</delete>
+	
+	<select id="postingCnt" parameterType="PostingVO" resultType="java.lang.Integer">
+		SELECT
+			(IFNULL(MAX(POSTING_SEQ),0) + 1) AS CNT
+		FROM
+			TBL_POSTING 
+	</select>
+	
+	<select id="getCatCode" resultType="PostingVO">
+		SELECT 
+			CAT_NAME, CAT_CODE 
+		FROM 
+			TBL_CATEGORY
+		ORDER BY CAT_CODE
+	</select>
+	
+	<select id="postingDetail"  parameterType="PostingVO" resultType="PostingVO">
+		SELECT
+			Posting_seq,
+			title,
+			cont,
+			cars,
+			cat_code,
+			addr,
+			addr_dtl,
+			goods,
+			writer
+		from 
+			tbl_posting
+		WHERE 
+			Posting_seq = #{Posting_seq}
+	</select>
+	
+</mapper>
+
+
